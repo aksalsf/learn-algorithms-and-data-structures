@@ -3,7 +3,7 @@ public class IncrementTest {
 	static Scanner data = new Scanner (System.in);
 	public static void main (String [] args) {
 	// Deklarasi Variable
-	int x;
+	int x, y;
 	// Program starts
 	System.out.println("Aplikasi Increment");
 	System.out.print("Nilai x =>");
@@ -11,8 +11,16 @@ public class IncrementTest {
 	System.out.println(x);
 	int i = 1;
 	while (i < 100) {
-	System.out.print(++x + " ");
+	System.out.println(++x);
 	i++;
+	}
+	System.out.print("Nilai y =>");
+	y = data.nextInt(); data.nextLine();
+	System.out.println(y);
+	int z = 1;
+	while (z < 100) {
+	System.out.println(--y);
+	z++;
 	}
 }
 }
