@@ -6,7 +6,7 @@ public class SegitigaSamaKaki {
 		double alas, alas2, tinggi, sisi, keliling, luas;
 		// Input
 		System.out.println("Aplikasi Hitung Luas dan Keliling Segitiga Sama Kaki");
-		System.out.print("Nilai alas => ");w
+		System.out.print("Nilai alas => ");
 		alas = data.nextDouble(); data.nextLine();
 		System.out.print("Nilai tinggi => ");
 		tinggi = data.nextDouble(); data.nextLine();
