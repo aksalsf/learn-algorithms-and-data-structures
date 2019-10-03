@@ -19,12 +19,16 @@ public class percabanganIf {
 	}
 
 	// Nested If
-	if (nilai < 60) {
-		predikat = 'C';
-	} else if (nilai < 80) {
-		predikat = 'B';
-	} else {
+	if (nilai > 74) {
 		predikat = 'A';
+	} else if (nilai > 69) {
+		predikat = 'B';
+	} else if (nilai > 59) {
+		predikat = 'C';
+	} else if (nilai > 49) {
+		predikat = 'D';
+	} else {
+		predikat = 'E';
 	}
 	// Output
 	System.out.println("Hai " + nama + ", kamu " + statusLulus);
