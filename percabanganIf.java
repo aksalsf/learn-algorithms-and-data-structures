@@ -7,9 +7,9 @@ public class percabanganIf {
 	String nama, statusLulus;
 	char predikat;
 	// Input
-	System.out.print("Nama =>");
+	System.out.print("Nama => ");
 	nama = data.nextLine();
-	System.out.print("Masukkan nilai Anda =>");
+	System.out.print("Masukkan nilai Anda => ");
 	nilai = data.nextInt(); data.nextLine();
 	// If
 	if (nilai >= 60) {
@@ -19,19 +19,30 @@ public class percabanganIf {
 	}
 
 	// Nested If
-	if (nilai > 74) {
+	if (nilai >= 0 && nilai <= 100) {
+		if (nilai > 74) {
 		predikat = 'A';
-	} else if (nilai > 69) {
-		predikat = 'B';
-	} else if (nilai > 59) {
-		predikat = 'C';
-	} else if (nilai > 49) {
-		predikat = 'D';
+		} else if (nilai > 69) {
+			predikat = 'B';
+		} else if (nilai > 59) {
+			predikat = 'C';
+		} else if (nilai > 49) {
+			predikat = 'D';
+		} else {
+			predikat = 'E';
+		}
+		// Output
+		System.out.println("Hai " + nama + ", kamu " + statusLulus + " dengan predikat " + predikat);
 	} else {
-		predikat = 'E';
+		System.out.println("Hai " + nama + ". Nilai yang Anda masukkan salah, silakan coba lagi.");
 	}
-	// Output
-	System.out.println("Hai " + nama + ", kamu " + statusLulus);
-	System.out.println("Predikat kamu => " + predikat);
+	
+	// OR
+	if (statusLulus != "lulus" || nilai < 70) {
+		System.out.println("Hai " + nama + ", belajar yang rajin, ya.");
+	} else {
+		System.out.println("Selamat " + nama + ", tingkatkan terus prestasimu, ya.");
+	}
+
 	}
 }
