@@ -10,8 +10,14 @@ public class numberBetween {
 	System.out.print("Nilai z => ");
 	z = data.nextInt(); data.nextLine();
 	// Proses & Output
-	for (int i=a; i <= z ; i++) {
-		System.out.print(i + " ");
+	if (z<a) {
+		for (z=z; z <= a ; z++) {
+		System.out.print(z + " ");
+		}	
+	} else { 
+		for (a=a; a <= z ; a++) {
+		System.out.print(a + " ");
+		}	
 	}
 	}
 }

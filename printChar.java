@@ -4,16 +4,13 @@ public class printChar {
 	public static void main(String[] abc) {
 	// Deklarasi Variabel
 	char print;
-	// Input
-	System.out.print("Masukkan karakter => ");
-	print = data.next().charAt(0);data.nextLine();
 	// Perulangan
 	int i=1;
-	while (print != 'x' && print != 'X') {
-		System.out.println(print);
+	do {
 		System.out.print("Masukkan karakter => ");
 		print = data.next().charAt(0);data.nextLine();
+		System.out.println("karakter ke-" + i + " => " + print);
 		i++;
-	}
+	} while (print != 'x' && print != 'X');
 	}
 }

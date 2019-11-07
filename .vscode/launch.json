@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - faktorial",
+            "request": "launch",
+            "mainClass": "faktorial"
+        }
+    ]
+}
