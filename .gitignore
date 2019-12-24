@@ -1,0 +1,4 @@
+# Ignore folder named 'DTSFake'
+DTSFake/
+# Ignore all .class files
+*.class
