@@ -1,4 +1,5 @@
-# Java - Algoritma dan Pemrogaman Dasar | D3 Teknik Informatika | Universitas Sebelas Maret
+# Java 
+Algoritma dan Pemrogaman Dasar | D3 Teknik Informatika | Universitas Sebelas Maret
 # What do we learn?
 1. Variable
 2. Data types
